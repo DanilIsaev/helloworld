@@ -3,6 +3,7 @@ public class Main {
 
         System.out.println("Привет, Мир!");
         System.out.println("Hello World ");
+        System.out.println("Hello World 2");
 
     }
 }
