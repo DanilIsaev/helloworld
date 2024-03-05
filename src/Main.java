@@ -35,7 +35,14 @@ public class Main {
         System.out.println(cat);
         System.out.println(paper);
 
+        // Задача 4
 
+        var friend = 19;
+        System.out.println(friend);
+        friend += 2;
+        System.out.println(friend);
+        friend /= 7;
+        System.out.println(friend);
 
 
     }
