@@ -44,6 +44,27 @@ public class Main {
         friend /= 7;
         System.out.println(friend);
 
+        // Задача 5
+
+        var frog = 3.5;
+        System.out.println(frog);
+        frog = frog * 10;
+        System.out.println(frog);
+        frog = frog / 3.5;
+        System.out.println(frog);
+        frog = frog + 4;
+        System.out.println(frog);
+
+        // Задача 6
+
+        var massFighter1 = 78.1;
+        var massFighter2 = 82.7;
+        var massSum = massFighter1 + massFighter2;
+        var massDiff = massFighter1 - massFighter2;
+
+        System.out.println("Общая масса бойцов:" + massSum);
+        System.out.println("Разность между массами бойцов:" + massDiff);
+
 
     }
 }
