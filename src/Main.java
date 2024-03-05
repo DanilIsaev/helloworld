@@ -59,11 +59,33 @@ public class Main {
 
         var massFighter1 = 78.1;
         var massFighter2 = 82.7;
+
         var massSum = massFighter1 + massFighter2;
         var massDiff = massFighter1 - massFighter2;
-
         System.out.println("Общая масса бойцов:" + massSum);
         System.out.println("Разность между массами бойцов:" + massDiff);
+
+        // Задача 7
+
+        var massRemainsDiv = massFighter2 % massFighter1;
+        System.out.println(massRemainsDiv);
+
+        // Задача 8.1
+
+        var totalWorkingTime = 640;
+        var oneWorkingTime = 8;
+
+        var countEmployees = totalWorkingTime/oneWorkingTime;
+        System.out.println("Всего работников в компании — " + countEmployees + " человек");
+
+        // Задача 8.2
+
+        var modifiedCountEmployees = 94;
+
+        modifiedCountEmployees = countEmployees + modifiedCountEmployees;
+        var modifiedOneWorkingTime = totalWorkingTime / modifiedCountEmployees;
+        System.out.println("Если в компании работает " + modifiedCountEmployees + " человек, то всего " + modifiedOneWorkingTime + " часов работы может быть поделено между сотрудниками");
+
 
 
     }
