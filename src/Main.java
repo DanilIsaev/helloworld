@@ -166,6 +166,22 @@ public class Main {
 
         // Задача 6
 
+        byte quantityBanana = 5;
+        byte quantityMilk100Ml = 2;
+        byte quantityIceCream = 2;
+        byte quantityEgg = 4;
+        byte weightBanana = 80;
+        byte weightMilk100Ml = 105;
+        byte weightIceCream = 100;
+        byte weightEgg = 70;
+
+        int totalWeightGrams = quantityBanana * weightBanana + quantityMilk100Ml * weightMilk100Ml + quantityIceCream * weightIceCream + quantityEgg * weightEgg;
+        float totalWeightKilograms = (float) totalWeightGrams / 1000;
+
+        System.out.println("Вес спортзавтрака в граммах = " + totalWeightGrams);
+        System.out.println("Вес спортзавтрака в килограммах = " + totalWeightKilograms);
+
+
 
     }
 }
