@@ -181,6 +181,25 @@ public class Main {
         System.out.println("Вес спортзавтрака в граммах = " + totalWeightGrams);
         System.out.println("Вес спортзавтрака в килограммах = " + totalWeightKilograms);
 
+        // Задачам 7
+
+        int overWeightKG = 7;
+        int translationKg = 1000;
+        int weightLoss250 = 250;
+        int weightLoss500 = 500;
+
+        float daysLose250 = (float) (overWeightKG * translationKg)/weightLoss250;
+        float daysLose500 = (float) (overWeightKG * translationKg)/weightLoss500;
+        float daysAverage = (daysLose250 + daysLose500) / 2;
+
+        System.out.println("Если необходимо терять 250 грамм в день, необходимо потратить " + daysLose250 + " дней");
+        System.out.println("Если необходимо терять 500 грамм в день, необходимо потратить " + daysLose500 + " дней");
+        System.out.println("В среднем необходимо потратить " + daysAverage + " дней");
+
+
+
+
+
 
 
     }
