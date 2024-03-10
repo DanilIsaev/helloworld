@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Привет, Мир!");
         System.out.println("Hello World!!!");
 
-        // Тема занятия переменные
+        // Тема занятия: Переменные
         // Задача 1
 
         var dog = 8.0;
@@ -86,6 +86,7 @@ public class Main {
         var modifiedOneWorkingTime = totalWorkingTime / modifiedCountEmployees;
         System.out.println("Если в компании работает " + modifiedCountEmployees + " человек, то всего " + modifiedOneWorkingTime + " часов работы может быть поделено между сотрудниками");
 
+        // Тема занятия: Переменные 2
 
 
     }
