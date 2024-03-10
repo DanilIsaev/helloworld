@@ -154,7 +154,17 @@ public class Main {
 
         // Задача 5
 
+        int numbersPaint = 120;
+        int numbersWriteClass = 2;
+        int numbersBrowClass = 4;
 
+        int numbersClass = numbersPaint / (numbersWriteClass + numbersBrowClass);
+        int numbersWriteCans = numbersClass * numbersWriteClass;
+        int numbersBrowCans = numbersClass * numbersBrowClass;
+        System.out.println("В школе, где " + numbersClass + " классов, нужно " + numbersWriteCans + " банок белой краски и " + numbersBrowCans + " банок коричневой краски");
+
+
+        // Задача 6
 
 
     }
