@@ -103,6 +103,34 @@ public class Main {
         System.out.println("Значение переменной floatVariable с типом float равно "     + floatVariable);
         System.out.println("Значение переменной doubleVariable с типом double равно "   + doubleVariable);
 
+        // Задача 2
+
+        float   varTask2_1 = 27.12f;
+        long    varTask2_2 = 987678965549L;
+        float   varTask2_3 = 2.786f;
+        short   varTask2_4 = 569;
+        short   varTask2_5 = -159;
+        short   varTask2_6 = 27897;
+        byte    varTask2_7 = 67;
+
+        System.out.println(varTask2_1);
+        System.out.println(varTask2_2);
+        System.out.println(varTask2_3);
+        System.out.println(varTask2_4);
+        System.out.println(varTask2_5);
+        System.out.println(varTask2_6);
+        System.out.println(varTask2_7);
+
+
+        // Задача 3
+
+        short classLudmilaPavlovna = 23;
+        short classAnnaSergyvna = 27;
+        short classEkaterinaAndreivna = 30;
+        short numberSheets = 480;
+        int resultNumberSheets = numberSheets / (classAnnaSergyvna + classLudmilaPavlovna + classEkaterinaAndreivna);
+
+        System.out.println("На каждого ученика рассчитано " + resultNumberSheets + " листов бумаги");
 
     }
 }
