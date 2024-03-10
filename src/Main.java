@@ -132,5 +132,26 @@ public class Main {
 
         System.out.println("На каждого ученика рассчитано " + resultNumberSheets + " листов бумаги");
 
+        // Задача 4
+
+        short performance2Minutes = 16;
+        int performanceMinutes = performance2Minutes / 2;
+        int performance20Minutes = performanceMinutes * 20;
+        int performanceDay = performanceMinutes * 60 * 24; // Производительность за минуту умноженная на количество минут в часе и количество часов в сутках
+        int performance3Day = performanceDay * 3;
+        int performance30Day = performanceDay * 30; // в месяце 30 дней
+        int performance31Day = performanceDay * 31; // в месяце 31 день
+        int performance28Day = performanceDay * 28; // в месяце 28 дней
+        int performance29Day = performanceDay * 29; // в месяце 29 дней
+
+        System.out.println("За 20 минут машина произвела " + performance20Minutes + " штук бутылок");
+        System.out.println("За сутки машина произвела " + performanceDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + performance3Day + " штук бутылок");
+        System.out.println("За месяц из 28 дней машина произвела " + performance28Day + " штук бутылок");
+        System.out.println("За месяц из 29 дней машина произвела " + performance29Day + " штук бутылок");
+        System.out.println("За месяц из 30 дней машина произвела " + performance30Day + " штук бутылок");
+        System.out.println("За месяц из 31 дня машина произвела " + performance31Day + " штук бутылок");
+
+
     }
 }
