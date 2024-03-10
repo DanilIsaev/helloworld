@@ -152,6 +152,10 @@ public class Main {
         System.out.println("За месяц из 30 дней машина произвела " + performance30Day + " штук бутылок");
         System.out.println("За месяц из 31 дня машина произвела " + performance31Day + " штук бутылок");
 
+        // Задача 5
+
+
+
 
     }
 }
