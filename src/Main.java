@@ -87,6 +87,7 @@ public class Main {
         System.out.println("Если в компании работает " + modifiedCountEmployees + " человек, то всего " + modifiedOneWorkingTime + " часов работы может быть поделено между сотрудниками");
 
         // Тема занятия: Переменные 2
+        // Задача 1
 
 
     }
