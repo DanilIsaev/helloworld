@@ -89,6 +89,20 @@ public class Main {
         // Тема занятия: Переменные 2
         // Задача 1
 
+        int     intVariable = 300000;
+        byte    byteVariable = 126;
+        short   shortVariable = 32000;
+        long    longVariable = 9111111111L;
+        float   floatVariable = 32.32f;
+        double  doubleVariable = 2.23112311231123123;
+
+        System.out.println("Значение переменной intVariable с типом int равно "         + intVariable);
+        System.out.println("Значение переменной byteVariable с типом byte равно "       + byteVariable);
+        System.out.println("Значение переменной shortVariable с типом short равно "     + shortVariable);
+        System.out.println("Значение переменной longVariable с типом long равно "       + longVariable);
+        System.out.println("Значение переменной floatVariable с типом float равно "     + floatVariable);
+        System.out.println("Значение переменной doubleVariable с типом double равно "   + doubleVariable);
+
 
     }
 }
