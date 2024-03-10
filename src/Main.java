@@ -196,6 +196,29 @@ public class Main {
         System.out.println("Если необходимо терять 500 грамм в день, необходимо потратить " + daysLose500 + " дней");
         System.out.println("В среднем необходимо потратить " + daysAverage + " дней");
 
+        // Задача 8
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        float monthCoefficient = 0.1f; // повышение в 10%
+        int monthsOfYear = 12;
+
+        // ЗП после повышения на 10%
+        float salaryMashaInc = (float) salaryMasha + (salaryMasha * monthCoefficient);
+        float salaryDenisInc = (float) salaryDenis + (salaryDenis * monthCoefficient);
+        float salaryKristinaInc = (float) salaryKristina + (salaryKristina * monthCoefficient);
+
+        // Изменение годового дохода
+        float annualIncomeChangeMasha =     (salaryMashaInc - salaryMasha)       * monthsOfYear;
+        float annualIncomeChangeDenis =     (salaryDenisInc - salaryDenis)       * monthsOfYear;
+        float annualIncomeChangeKristina =  (salaryKristinaInc - salaryKristina) * monthsOfYear;
+
+        System.out.println("Маша теперь получает " + salaryMashaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisInc + " рублей. Годовой доход вырос на " + annualIncomeChangeDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristinaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeKristina + " рублей");
+
+
 
 
 
