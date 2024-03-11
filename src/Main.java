@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Привет, Мир!");
         System.out.println("Hello World!!!");
 
-        // Тема занятия переменные
+        // Тема занятия: Переменные
         // Задача 1
 
         var dog = 8.0;
@@ -85,6 +85,143 @@ public class Main {
         modifiedCountEmployees = countEmployees + modifiedCountEmployees;
         var modifiedOneWorkingTime = totalWorkingTime / modifiedCountEmployees;
         System.out.println("Если в компании работает " + modifiedCountEmployees + " человек, то всего " + modifiedOneWorkingTime + " часов работы может быть поделено между сотрудниками");
+
+        // Тема занятия: Переменные 2
+        // Задача 1
+
+        int     intVariable = 300000;
+        byte    byteVariable = 126;
+        short   shortVariable = 32000;
+        long    longVariable = 9111111111L;
+        float   floatVariable = 32.32f;
+        double  doubleVariable = 2.23112311231123123;
+
+        System.out.println("Значение переменной intVariable с типом int равно "         + intVariable);
+        System.out.println("Значение переменной byteVariable с типом byte равно "       + byteVariable);
+        System.out.println("Значение переменной shortVariable с типом short равно "     + shortVariable);
+        System.out.println("Значение переменной longVariable с типом long равно "       + longVariable);
+        System.out.println("Значение переменной floatVariable с типом float равно "     + floatVariable);
+        System.out.println("Значение переменной doubleVariable с типом double равно "   + doubleVariable);
+
+        // Задача 2
+
+        float   varTask2_1 = 27.12f;
+        long    varTask2_2 = 987678965549L;
+        float   varTask2_3 = 2.786f;
+        short   varTask2_4 = 569;
+        short   varTask2_5 = -159;
+        short   varTask2_6 = 27897;
+        byte    varTask2_7 = 67;
+
+        System.out.println(varTask2_1);
+        System.out.println(varTask2_2);
+        System.out.println(varTask2_3);
+        System.out.println(varTask2_4);
+        System.out.println(varTask2_5);
+        System.out.println(varTask2_6);
+        System.out.println(varTask2_7);
+
+
+        // Задача 3
+
+        short classLudmilaPavlovna = 23;
+        short classAnnaSergyvna = 27;
+        short classEkaterinaAndreivna = 30;
+        short numberSheets = 480;
+        int resultNumberSheets = numberSheets / (classAnnaSergyvna + classLudmilaPavlovna + classEkaterinaAndreivna);
+
+        System.out.println("На каждого ученика рассчитано " + resultNumberSheets + " листов бумаги");
+
+        // Задача 4
+
+        short performance2Minutes = 16;
+        int performanceMinutes = performance2Minutes / 2;
+        int performance20Minutes = performanceMinutes * 20;
+        int performanceDay = performanceMinutes * 60 * 24; // Производительность за минуту умноженная на количество минут в часе и количество часов в сутках
+        int performance3Day = performanceDay * 3;
+        int performance30Day = performanceDay * 30; // в месяце 30 дней
+        int performance31Day = performanceDay * 31; // в месяце 31 день
+        int performance28Day = performanceDay * 28; // в месяце 28 дней
+        int performance29Day = performanceDay * 29; // в месяце 29 дней
+
+        System.out.println("За 20 минут машина произвела " + performance20Minutes + " штук бутылок");
+        System.out.println("За сутки машина произвела " + performanceDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + performance3Day + " штук бутылок");
+        System.out.println("За месяц из 28 дней машина произвела " + performance28Day + " штук бутылок");
+        System.out.println("За месяц из 29 дней машина произвела " + performance29Day + " штук бутылок");
+        System.out.println("За месяц из 30 дней машина произвела " + performance30Day + " штук бутылок");
+        System.out.println("За месяц из 31 дня машина произвела " + performance31Day + " штук бутылок");
+
+        // Задача 5
+
+        int numbersPaint = 120;
+        int numbersWriteClass = 2;
+        int numbersBrowClass = 4;
+
+        int numbersClass = numbersPaint / (numbersWriteClass + numbersBrowClass);
+        int numbersWriteCans = numbersClass * numbersWriteClass;
+        int numbersBrowCans = numbersClass * numbersBrowClass;
+        System.out.println("В школе, где " + numbersClass + " классов, нужно " + numbersWriteCans + " банок белой краски и " + numbersBrowCans + " банок коричневой краски");
+
+
+        // Задача 6
+
+        byte quantityBanana = 5;
+        byte quantityMilk100Ml = 2;
+        byte quantityIceCream = 2;
+        byte quantityEgg = 4;
+        byte weightBanana = 80;
+        byte weightMilk100Ml = 105;
+        byte weightIceCream = 100;
+        byte weightEgg = 70;
+
+        int totalWeightGrams = quantityBanana * weightBanana + quantityMilk100Ml * weightMilk100Ml + quantityIceCream * weightIceCream + quantityEgg * weightEgg;
+        float totalWeightKilograms = (float) totalWeightGrams / 1000;
+
+        System.out.println("Вес спортзавтрака в граммах = " + totalWeightGrams);
+        System.out.println("Вес спортзавтрака в килограммах = " + totalWeightKilograms);
+
+        // Задачам 7
+
+        int overWeightKG = 7;
+        int translationKg = 1000;
+        int weightLoss250 = 250;
+        int weightLoss500 = 500;
+
+        float daysLose250 = (float) (overWeightKG * translationKg)/weightLoss250;
+        float daysLose500 = (float) (overWeightKG * translationKg)/weightLoss500;
+        float daysAverage = (daysLose250 + daysLose500) / 2;
+
+        System.out.println("Если необходимо терять 250 грамм в день, необходимо потратить " + daysLose250 + " дней");
+        System.out.println("Если необходимо терять 500 грамм в день, необходимо потратить " + daysLose500 + " дней");
+        System.out.println("В среднем необходимо потратить " + daysAverage + " дней");
+
+        // Задача 8
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+        float monthCoefficient = 0.1f; // повышение в 10%
+        int monthsOfYear = 12;
+
+        // ЗП после повышения на 10%
+        float salaryMashaInc = (float) salaryMasha + (salaryMasha * monthCoefficient);
+        float salaryDenisInc = (float) salaryDenis + (salaryDenis * monthCoefficient);
+        float salaryKristinaInc = (float) salaryKristina + (salaryKristina * monthCoefficient);
+
+        // Изменение годового дохода
+        float annualIncomeChangeMasha =     (salaryMashaInc - salaryMasha)       * monthsOfYear;
+        float annualIncomeChangeDenis =     (salaryDenisInc - salaryDenis)       * monthsOfYear;
+        float annualIncomeChangeKristina =  (salaryKristinaInc - salaryKristina) * monthsOfYear;
+
+        System.out.println("Маша теперь получает " + salaryMashaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisInc + " рублей. Годовой доход вырос на " + annualIncomeChangeDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryKristinaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeKristina + " рублей");
+
+
+
+
+
 
 
 
