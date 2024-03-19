@@ -75,7 +75,7 @@ public class Main {
         var totalWorkingTime = 640;
         var oneWorkingTime = 8;
 
-        var countEmployees = totalWorkingTime/oneWorkingTime;
+        var countEmployees = totalWorkingTime / oneWorkingTime;
         System.out.println("Всего работников в компании — " + countEmployees + " человек");
 
         // Задача 8.2
@@ -89,29 +89,29 @@ public class Main {
         // Тема занятия: Переменные 2
         // Задача 1
 
-        int     intVariable = 300000;
-        byte    byteVariable = 126;
-        short   shortVariable = 32000;
-        long    longVariable = 9111111111L;
-        float   floatVariable = 32.32f;
-        double  doubleVariable = 2.23112311231123123;
+        int intVariable = 300000;
+        byte byteVariable = 126;
+        short shortVariable = 32000;
+        long longVariable = 9111111111L;
+        float floatVariable = 32.32f;
+        double doubleVariable = 2.23112311231123123;
 
-        System.out.println("Значение переменной intVariable с типом int равно "         + intVariable);
-        System.out.println("Значение переменной byteVariable с типом byte равно "       + byteVariable);
-        System.out.println("Значение переменной shortVariable с типом short равно "     + shortVariable);
-        System.out.println("Значение переменной longVariable с типом long равно "       + longVariable);
-        System.out.println("Значение переменной floatVariable с типом float равно "     + floatVariable);
-        System.out.println("Значение переменной doubleVariable с типом double равно "   + doubleVariable);
+        System.out.println("Значение переменной intVariable с типом int равно " + intVariable);
+        System.out.println("Значение переменной byteVariable с типом byte равно " + byteVariable);
+        System.out.println("Значение переменной shortVariable с типом short равно " + shortVariable);
+        System.out.println("Значение переменной longVariable с типом long равно " + longVariable);
+        System.out.println("Значение переменной floatVariable с типом float равно " + floatVariable);
+        System.out.println("Значение переменной doubleVariable с типом double равно " + doubleVariable);
 
         // Задача 2
 
-        float   varTask2_1 = 27.12f;
-        long    varTask2_2 = 987678965549L;
-        float   varTask2_3 = 2.786f;
-        short   varTask2_4 = 569;
-        short   varTask2_5 = -159;
-        short   varTask2_6 = 27897;
-        byte    varTask2_7 = 67;
+        float varTask2_1 = 27.12f;
+        long varTask2_2 = 987678965549L;
+        float varTask2_3 = 2.786f;
+        short varTask2_4 = 569;
+        short varTask2_5 = -159;
+        short varTask2_6 = 27897;
+        byte varTask2_7 = 67;
 
         System.out.println(varTask2_1);
         System.out.println(varTask2_2);
@@ -188,8 +188,8 @@ public class Main {
         int weightLoss250 = 250;
         int weightLoss500 = 500;
 
-        float daysLose250 = (float) (overWeightKG * translationKg)/weightLoss250;
-        float daysLose500 = (float) (overWeightKG * translationKg)/weightLoss500;
+        float daysLose250 = (float) (overWeightKG * translationKg) / weightLoss250;
+        float daysLose500 = (float) (overWeightKG * translationKg) / weightLoss500;
         float daysAverage = (daysLose250 + daysLose500) / 2;
 
         System.out.println("Если необходимо терять 250 грамм в день, необходимо потратить " + daysLose250 + " дней");
@@ -210,20 +210,92 @@ public class Main {
         float salaryKristinaInc = (float) salaryKristina + (salaryKristina * monthCoefficient);
 
         // Изменение годового дохода
-        float annualIncomeChangeMasha =     (salaryMashaInc - salaryMasha)       * monthsOfYear;
-        float annualIncomeChangeDenis =     (salaryDenisInc - salaryDenis)       * monthsOfYear;
-        float annualIncomeChangeKristina =  (salaryKristinaInc - salaryKristina) * monthsOfYear;
+        float annualIncomeChangeMasha = (salaryMashaInc - salaryMasha) * monthsOfYear;
+        float annualIncomeChangeDenis = (salaryDenisInc - salaryDenis) * monthsOfYear;
+        float annualIncomeChangeKristina = (salaryKristinaInc - salaryKristina) * monthsOfYear;
 
         System.out.println("Маша теперь получает " + salaryMashaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeMasha + " рублей");
         System.out.println("Денис теперь получает " + salaryDenisInc + " рублей. Годовой доход вырос на " + annualIncomeChangeDenis + " рублей");
         System.out.println("Кристина теперь получает " + salaryKristinaInc + " рублей. Годовой доход вырос на " + annualIncomeChangeKristina + " рублей");
 
+        // Тема занятия: Условный оператор
+        // Задача 1
+
+        int age = 18;
+
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
+        } else {
+            System.out.println("Если возраст человека равен " + age + ",он не достиг совершеннолетия, нужно немного подождать");
+        }
+
+        // Задача 2
+        int temperatureStreet = 16;
+
+        if (temperatureStreet < 5) {
+            System.out.println("На улице " + temperatureStreet + " градусов, нужно надеть шапку");
+        } else {
+            System.out.println("На улице " + temperatureStreet + " градусов, можно идти без шапки");
+        }
+
+        // Задача 3
+        int driverSpeed = 70;
+
+        if (driverSpeed < 60) {
+            System.out.println("Если скорость " + driverSpeed + ", то придется заплатить штраф");
+        } else {
+            System.out.println("Если скорость " + driverSpeed + ", то можно ездить спокойно");
+        }
+
+        // Задача 4
+        int ageHuman = 23;
+
+        if (ageHuman > 2 && ageHuman <= 6) {
+            System.out.println("Если возраст человека равен " + ageHuman + ", то ему нужно ходить в детский сад");
+        } else if (ageHuman >= 7 && ageHuman <= 17) {
+            System.out.println("Если возраст человека равен " + ageHuman + ", то ему нужно ходить в школу");
+        } else if (ageHuman >= 18 && ageHuman <= 24) {
+            System.out.println("Если возраст человека равен " + ageHuman + ", то ему нужно ходить в университет");
+        } else if (ageHuman > 24) {
+            System.out.println("Если возраст человека равен " + ageHuman + ", то ему нужно ходить на работу");
+        }
+
+        // Задача 5
+        int ageBaby = 13;
+
+        if (ageBaby <= 5) {
+            System.out.println("Если возраст ребенка равен " + ageBaby + ", то ему нельзя кататься на аттракционе");
+        } else if (ageBaby > 5 && ageBaby <= 14) {
+            System.out.println("Если возраст ребенка равен " + ageBaby + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+        } else
+            System.out.println("Если возраст ребенка равен " + ageBaby + ", то ему можно кататься на аттракционе без сопровождения взрослого");
 
 
+        // Задача 6
+        int maxPlace = 102;
+        int seatPlace = 60;
+        int busyPlace = 62;
 
+        if (busyPlace < seatPlace) {
+            System.out.printf("В вагоне есть свободные сидячие места, их количество: %d \n", seatPlace - busyPlace);
+        } else if (busyPlace < maxPlace) {
+            System.out.printf("В вагоне есть свободные стоячие места, их количество: %d \n", maxPlace - seatPlace - (busyPlace - seatPlace));
+        } else
+            System.out.println("Вагон полностью забит");
 
+        // Задача 7
+        int one = 1;
+        int two = 5;
+        int three = 3;
 
-
+        if (one > two && one > three) {
+            System.out.println("Число one большее из трех чисел");
+        } else if (two > three) {
+            System.out.println("Число two большее из трех чисел");
+        } else if (three > two) {
+            System.out.println("Число three большее из трех чисел");
+        } else
+            System.out.println("Есть равные числа");
 
     }
 }
