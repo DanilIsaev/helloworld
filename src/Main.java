@@ -297,5 +297,20 @@ public class Main {
         } else
             System.out.println("Есть равные числа");
 
+        // Тема занятия - условные операторы 2
+        // Задача 1
+
+        int currentOs = 0;
+
+        switch (currentOs) {
+            case 0:
+                System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 1:
+                System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("Данная операционная система не поддерживается разработчиком");
+        }
     }
 }
