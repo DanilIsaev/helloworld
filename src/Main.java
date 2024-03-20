@@ -241,7 +241,7 @@ public class Main {
         // Задача 3
         int driverSpeed = 70;
 
-        if (driverSpeed < 60) {
+        if (driverSpeed > 60) {
             System.out.println("Если скорость " + driverSpeed + ", то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + driverSpeed + ", то можно ездить спокойно");
