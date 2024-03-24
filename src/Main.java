@@ -333,11 +333,11 @@ public class Main {
         }
 
         // Задача 3
-        int year = 2004;
+        int year = 1600;
 
-        if (year % 4 == 0 && year > 1584) {
+        if (year % 4 == 0 && year > 1584 && year % 100 != 0 || year > 1584 && year % 400 == 0) {
             System.out.println(year + " год является високосным");
-        } else if (year > 1584) {
+        } else if (year >= 1584) {
             System.out.println(year + " год не является високосным");
         } else
             System.out.println(year + " год не входит в список високосных");
