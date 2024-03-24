@@ -343,5 +343,23 @@ public class Main {
             System.out.println(year + " год не входит в список високосных");
 
         // Задача 4
+        int deliveryDistance = 95;
+        int deliveryTime;
+
+        if (deliveryDistance <= 20) {
+            deliveryTime = 1;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryTime = 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryTime = 3;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else
+            System.out.println("Доставки нет");
+
+        // Задача 5
+
+
     }
 }
