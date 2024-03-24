@@ -383,7 +383,7 @@ public class Main {
                 System.out.println(monthNumber + " месяц - это осень");
                 break;
             default:
-                System.out.println("Ошибка, введеное число не является месяцем");
+                System.out.println("Ошибка, введеное число не является месяцем календаря");
                 break;
         }
     }
