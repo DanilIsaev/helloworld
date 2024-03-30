@@ -423,5 +423,10 @@ public class Main {
             System.out.println(i);
         }
 
+        // Задача 8
+        int moneySaving = 29000;
+        for (int i = 1; i <= 12; i++) {
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySaving * i + " рублей");
+        }
     }
 }
