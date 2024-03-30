@@ -428,5 +428,14 @@ public class Main {
         for (int i = 1; i <= 12; i++) {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySaving * i + " рублей");
         }
+
+        // Задача 9
+        int moneySavingAnnual = 29000;
+        float annualInterest = 0.01F;
+        float moneySavingResult = 0;
+        for (int i = 1; i <= 12; i++) {
+            moneySavingResult = moneySavingResult + moneySavingAnnual + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySavingResult + " рублей");
+        }
     }
 }
