@@ -520,12 +520,23 @@ public class Main {
         // Задача 7
         int fridayWeek = 1;
 
-        for (int i = 1; i < 31; i++) {
+        for (int i = 1; i <= 31; i++) {
             if (i % fridayWeek == 0) {
                 System.out.println("Сегодня пятница," + i + "-е число. Необходимо подготовить отчет");
                 fridayWeek += 7;
             }
         }
 
+        // Задача 8
+        int thisYear_cycle2 = 2024;
+        int thisYear200 = thisYear_cycle2 - 200;
+        int thisYear100 = thisYear_cycle2 + 100;
+
+        while (thisYear200 < thisYear100) {
+            if (thisYear200 % 79 == 0) {
+            System.out.println(thisYear200);
+            }
+            thisYear200++;
+        }
     }
 }
