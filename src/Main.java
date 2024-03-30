@@ -504,7 +504,18 @@ public class Main {
         }
 
         // Задача 6
+        initialDeposit = 15_000F;
+        bankInterest = 0.07f;
+        mountCount = 0;
+        int annualCount = 9;
 
+        while (mountCount < annualCount * 12) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            if (mountCount % 6 == 0) {
+                System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+            }
+        }
 
     }
 }
