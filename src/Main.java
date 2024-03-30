@@ -517,5 +517,15 @@ public class Main {
             }
         }
 
+        // Задача 7
+        int fridayWeek = 1;
+
+        for (int i = 1; i < 31; i++) {
+            if (i % fridayWeek == 0) {
+                System.out.println("Сегодня пятница," + i + "-е число. Необходимо подготовить отчет");
+                fridayWeek += 7;
+            }
+        }
+
     }
 }
