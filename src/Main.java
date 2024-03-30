@@ -479,6 +479,17 @@ public class Main {
             System.out.println("Год " + thisYear + ", численность населения составляет " + populationY);
         }
 
+        // Задача 4
+        float initialDeposit = 15_000F;
+        float bankInterest = 0.07f;
+        int mountCount = 0;
+
+        while (initialDeposit < 12_000_000) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+        }
+
 
     }
 }
