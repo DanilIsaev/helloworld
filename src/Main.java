@@ -386,5 +386,11 @@ public class Main {
                 System.out.println("Ошибка, введеное число не является месяцем календаря");
                 break;
         }
+
+        // Тема: циклы 1
+        // Задача 1
+        for (int i = 1; i < 11; i++) {
+            System.out.println(i);
+        }
     }
 }
