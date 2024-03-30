@@ -490,6 +490,21 @@ public class Main {
             System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
         }
 
+        // Задача 5
+        initialDeposit = 15_000F;
+        bankInterest = 0.07f;
+        mountCount = 0;
+
+        while (initialDeposit < 12_000_000) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            if (mountCount % 6 == 0) {
+                System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+            }
+        }
+
+        // Задача 6
+
 
     }
 }
