@@ -467,6 +467,17 @@ public class Main {
         for (; countNumber > 0; countNumber--) {
             System.out.printf("%d ", countNumber);
         }
+        System.out.println();
+
+        // Задача 3
+        int populationY = 12_000_000;
+        int thisYear = 2024;
+
+        for (int i = 0; i < 10; i++) {
+            populationY = populationY + ((populationY / 1000) * 17) - ((populationY / 1000) * 8);
+            thisYear++;
+            System.out.println("Год " + thisYear + ", численность населения составляет " + populationY);
+        }
 
 
     }
