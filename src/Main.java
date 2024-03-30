@@ -433,9 +433,15 @@ public class Main {
         int moneySavingAnnual = 29000;
         float annualInterest = 0.01F;
         float moneySavingResult = 0;
+
         for (int i = 1; i <= 12; i++) {
-            moneySavingResult = moneySavingResult + moneySavingAnnual + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент
+            moneySavingResult = moneySavingResult + moneySavingAnnual + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент, правильны ли мои рассуждения?
             System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySavingResult + " рублей");
+        }
+
+        // Задача 10
+        for (int i = 1; i <= 10; i++) {
+            System.out.println("2 * " + i + " = " + 2 * i );
         }
     }
 }
