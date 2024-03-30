@@ -430,12 +430,12 @@ public class Main {
         }
 
         // Задача 9
-        int moneySavingAnnual = 29000;
+        int moneySavingMonthly = 29000;
         float annualInterest = 0.01F;
         float moneySavingResult = 0;
 
         for (int i = 1; i <= 12; i++) {
-            moneySavingResult = moneySavingResult + moneySavingAnnual + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент, правильны ли мои рассуждения?
+            moneySavingResult = moneySavingResult + moneySavingMonthly + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент, правильны ли мои рассуждения?
             System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySavingResult + " рублей");
         }
 
@@ -443,6 +443,31 @@ public class Main {
         for (int i = 1; i <= 10; i++) {
             System.out.println("2 * " + i + " = " + 2 * i);
         }
+
+        // Тема: циклы 2
+        // Задача 1
+        int moneySavingMonthly_cycle2 = 15000;
+        float annualInterest_cycle2 = 0.01F;
+        float moneySavingResult_cycle2 = 0;
+        int mountMoneySaving_cycle2 = 0;
+
+        while (moneySavingResult_cycle2 < 2_459_000) {
+            moneySavingResult_cycle2 = moneySavingResult_cycle2 + moneySavingMonthly_cycle2 + (moneySavingResult_cycle2 * annualInterest_cycle2);
+            mountMoneySaving_cycle2++;
+        }
+        System.out.println("Месяц " + mountMoneySaving_cycle2 + ", сумма накоплений равна " + moneySavingResult_cycle2 + " рублей");
+
+        // Задача 2
+        int countNumber = 0;
+        while (countNumber < 10) {
+            countNumber++;
+            System.out.printf("%d ", countNumber);
+        }
+        System.out.println();
+        for (; countNumber > 0; countNumber--) {
+            System.out.printf("%d ", countNumber);
+        }
+
 
     }
 }
