@@ -533,9 +533,10 @@ public class Main {
         int thisYear100 = thisYear_cycle2 + 100;
 
         while (thisYear200 < thisYear100) {
-            if (thisYear200 % 79 == 0) {
-            System.out.println(thisYear200);
-            }
+            if (thisYear200 % 79 == 0 && thisYear200 < thisYear_cycle2) {
+                System.out.println(thisYear200);
+            } else if (thisYear200 % 79 == 0 && thisYear200 > thisYear_cycle2)
+                System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
             thisYear200++;
         }
     }
