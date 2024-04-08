@@ -583,5 +583,9 @@ public class Main {
                 intArr[i]++;
         }
         System.out.println(Arrays.toString(intArr));
+
+        // Массивы 2
+        // Задачам 1
+
     }
 }
