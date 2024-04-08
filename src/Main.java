@@ -601,6 +601,13 @@ public class Main {
         System.out.println("Минимальная сумма трат за неделю составила " + weekPayment[0] + " рублей. Максимальная сумма трат за неделю составила " + weekPayment[weekPayment.length - 1] + " рублей");
 
         // Задача 3
+        int[] monthlyPayment_task3 = {10289, 231890, 54389, 122897, 90000};
+        double avrMonthlyPayment = 0d;
 
+        for (int i = 0; i < monthlyPayment_task3.length; i++) {
+            avrMonthlyPayment += monthlyPayment_task3[i];
+        }
+        avrMonthlyPayment = avrMonthlyPayment/monthlyPayment_task3.length;
+        System.out.println("Средняя сумма трат за месяц составила " + avrMonthlyPayment + " рублей");
     }
 }
