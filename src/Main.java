@@ -586,6 +586,21 @@ public class Main {
 
         // Массивы 2
         // Задачам 1
+        int[] monthlyPayment = {10289, 231890, 54389, 122897, 90000};
+        int summMonthlyPayment = 0;
+
+        for (int i = 0; i < monthlyPayment.length; i++) {
+            summMonthlyPayment += monthlyPayment[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + summMonthlyPayment + " рублей");
+
+        // Задача 2
+        int[] weekPayment = {1028, 23189, 5438, 12289, 9000};
+        Arrays.sort(weekPayment); // Реализуем сортировку по возрастанию
+        // Выводим первый элемент массива - минимальный, и последний - максимальный
+        System.out.println("Минимальная сумма трат за неделю составила " + weekPayment[0] + " рублей. Максимальная сумма трат за неделю составила " + weekPayment[weekPayment.length - 1] + " рублей");
+
+        // Задача 3
 
     }
 }
