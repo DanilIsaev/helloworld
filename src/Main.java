@@ -558,6 +558,24 @@ public class Main {
 
         // Задача 3
 
+        for (int i = 0; i < intArr.length - 1; i++) {
+            int tmp = intArr[i];
+            intArr[i] = intArr[intArr.length - 1 - i];
+            intArr[intArr.length - 1 - i] = tmp;
+        }
+        for (int i = 0; i < doubleArr.length - 1; i++) {
+            double tmp = doubleArr[i];
+            doubleArr[i] = doubleArr[doubleArr.length - 1 - i];
+            doubleArr[doubleArr.length - 1 - i] = tmp;
+        }
+        for (int i = 0; i < charArr.length - 1; i++) {
+            char tmp = charArr[i];
+            charArr[i] = charArr[charArr.length - 1 - i];
+            charArr[charArr.length - 1 - i] = tmp;
+        }
+        System.out.println(Arrays.toString(intArr));
+        System.out.println(Arrays.toString(doubleArr));
+        System.out.println(Arrays.toString(charArr));
 
     }
 }
