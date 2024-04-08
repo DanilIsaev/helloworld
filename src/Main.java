@@ -430,12 +430,12 @@ public class Main {
         }
 
         // Задача 9
-        int moneySavingAnnual = 29000;
+        int moneySavingMonthly = 29000;
         float annualInterest = 0.01F;
         float moneySavingResult = 0;
 
         for (int i = 1; i <= 12; i++) {
-            moneySavingResult = moneySavingResult + moneySavingAnnual + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент, правильны ли мои рассуждения?
+            moneySavingResult = moneySavingResult + moneySavingMonthly + (moneySavingResult * annualInterest); // каждый месяц в банк мы кладем 29000 + 1 процент полученный от банка на лежащую сумму за предыдущиее месяца, так называемый сложный процент, правильны ли мои рассуждения?
             System.out.println("Месяц " + i + ", сумма накоплений равна " + moneySavingResult + " рублей");
         }
 
@@ -443,6 +443,111 @@ public class Main {
         for (int i = 1; i <= 10; i++) {
             System.out.println("2 * " + i + " = " + 2 * i);
         }
+
+        // Тема: циклы 2
+        // Задача 1
+        int moneySavingMonthly_cycle2 = 15000;
+        float annualInterest_cycle2 = 0.01F;
+        float moneySavingResult_cycle2 = 0;
+        int mountMoneySaving_cycle2 = 0;
+
+        while (moneySavingResult_cycle2 < 2_459_000) {
+            moneySavingResult_cycle2 = moneySavingResult_cycle2 + moneySavingMonthly_cycle2 + (moneySavingResult_cycle2 * annualInterest_cycle2);
+            mountMoneySaving_cycle2++;
+        }
+        System.out.println("Месяц " + mountMoneySaving_cycle2 + ", сумма накоплений равна " + moneySavingResult_cycle2 + " рублей");
+
+        // Задача 2
+        int countNumber = 0;
+        while (countNumber < 10) {
+            countNumber++;
+            System.out.printf("%d ", countNumber);
+        }
+        System.out.println();
+        for (; countNumber > 0; countNumber--) {
+            System.out.printf("%d ", countNumber);
+        }
+        System.out.println();
+
+        // Задача 3
+        int populationY = 12_000_000;
+        int thisYear = 2024;
+
+        for (int i = 0; i < 10; i++) {
+            populationY = populationY + ((populationY / 1000) * 17) - ((populationY / 1000) * 8);
+            thisYear++;
+            System.out.println("Год " + thisYear + ", численность населения составляет " + populationY);
+        }
+
+        // Задача 4
+        float initialDeposit = 15_000F;
+        float bankInterest = 0.07f;
+        int mountCount = 0;
+
+        while (initialDeposit < 12_000_000) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+        }
+
+        // Задача 5
+        initialDeposit = 15_000F;
+        bankInterest = 0.07f;
+        mountCount = 0;
+
+        while (initialDeposit < 12_000_000) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            if (mountCount % 6 == 0) {
+                System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+            }
+        }
+
+        // Задача 6
+        initialDeposit = 15_000F;
+        bankInterest = 0.07f;
+        mountCount = 0;
+        int annualCount = 9;
+
+        while (mountCount < annualCount * 12) {
+            initialDeposit = initialDeposit + (initialDeposit * bankInterest);
+            mountCount++;
+            if (mountCount % 6 == 0) {
+                System.out.printf("Месяц %d, накопления равны - %f \n", mountCount, initialDeposit);
+            }
+        }
+
+        // Задача 7
+        int fridayWeek = 1;
+
+        for (int i = 1; i <= 31; i++) {
+            if (i % fridayWeek == 0) {
+                System.out.println("Сегодня пятница," + i + "-е число. Необходимо подготовить отчет");
+                fridayWeek += 7;
+            }
+        }
+
+        // Задача 8
+        int thisYear_cycle2 = 2024;
+        int thisYear200 = thisYear_cycle2 - 200;
+        int thisYear100 = thisYear_cycle2 + 100;
+
+        while (thisYear200 < thisYear100) {
+            if (thisYear200 % 79 == 0 && thisYear200 < thisYear_cycle2) {
+                System.out.println(thisYear200);
+            } else if (thisYear200 % 79 == 0 && thisYear200 > thisYear_cycle2)
+                System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
+            thisYear200++;
+        }
+
+        // Массивы 1
+        // Задача 1
+        int[] intArr = new int[3];
+        intArr[0] = 1;
+        intArr[1] = 2;
+        intArr[2] = 3;
+        double[] doubleArr = {1.57, 7.654, 9.986};
+        char[] charArr = {'a', 'b', 'c'};
 
     }
 }
