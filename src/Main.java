@@ -541,7 +541,7 @@ public class Main {
                 System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
             thisYear200++;
         }
-
+      
         // Массивы 1
         // Задача 1
         int[] intArr = new int[3];
@@ -583,5 +583,6 @@ public class Main {
                 intArr[i]++;
         }
         System.out.println(Arrays.toString(intArr));
+
     }
 }
