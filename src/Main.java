@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -548,6 +550,14 @@ public class Main {
         intArr[2] = 3;
         double[] doubleArr = {1.57, 7.654, 9.986};
         char[] charArr = {'a', 'b', 'c'};
+
+        // Задача 2
+        System.out.println(Arrays.toString(intArr));
+        System.out.println(Arrays.toString(doubleArr));
+        System.out.println(Arrays.toString(charArr));
+
+        // Задача 3
+
 
     }
 }
