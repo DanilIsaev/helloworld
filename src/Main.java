@@ -548,7 +548,7 @@ public class Main {
         intArr[0] = 1;
         intArr[1] = 2;
         intArr[2] = 3;
-        double[] doubleArr = {1.57, 7.654, 9.986};
+        double[] doubleArr = {1.57d, 7.654d, 9.986d};
         char[] charArr = {'a', 'b', 'c'};
 
         // Задача 2
@@ -577,5 +577,11 @@ public class Main {
         System.out.println(Arrays.toString(doubleArr));
         System.out.println(Arrays.toString(charArr));
 
+        // Задача 4
+        for (int i = 0; i < intArr.length; i++) {
+            if (intArr[i] % 2 == 1)
+                intArr[i]++;
+        }
+        System.out.println(Arrays.toString(intArr));
     }
 }
