@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -539,5 +541,48 @@ public class Main {
                 System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
             thisYear200++;
         }
+      
+        // Массивы 1
+        // Задача 1
+        int[] intArr = new int[3];
+        intArr[0] = 1;
+        intArr[1] = 2;
+        intArr[2] = 3;
+        double[] doubleArr = {1.57d, 7.654d, 9.986d};
+        char[] charArr = {'a', 'b', 'c'};
+
+        // Задача 2
+        System.out.println(Arrays.toString(intArr));
+        System.out.println(Arrays.toString(doubleArr));
+        System.out.println(Arrays.toString(charArr));
+
+        // Задача 3
+
+        for (int i = 0; i < intArr.length - 1; i++) {
+            int tmp = intArr[i];
+            intArr[i] = intArr[intArr.length - 1 - i];
+            intArr[intArr.length - 1 - i] = tmp;
+        }
+        for (int i = 0; i < doubleArr.length - 1; i++) {
+            double tmp = doubleArr[i];
+            doubleArr[i] = doubleArr[doubleArr.length - 1 - i];
+            doubleArr[doubleArr.length - 1 - i] = tmp;
+        }
+        for (int i = 0; i < charArr.length - 1; i++) {
+            char tmp = charArr[i];
+            charArr[i] = charArr[charArr.length - 1 - i];
+            charArr[charArr.length - 1 - i] = tmp;
+        }
+        System.out.println(Arrays.toString(intArr));
+        System.out.println(Arrays.toString(doubleArr));
+        System.out.println(Arrays.toString(charArr));
+
+        // Задача 4
+        for (int i = 0; i < intArr.length; i++) {
+            if (intArr[i] % 2 == 1)
+                intArr[i]++;
+        }
+        System.out.println(Arrays.toString(intArr));
+
     }
 }
