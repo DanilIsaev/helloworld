@@ -541,7 +541,7 @@ public class Main {
                 System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
             thisYear200++;
         }
-      
+
         // Массивы 1
         // Задача 1
         int[] intArr = new int[3];
@@ -604,9 +604,9 @@ public class Main {
         int minWeekPayment = weekPayment[0];
         int maxWeekPayment = weekPayment[0];
         for (int i = 0; i < weekPayment.length; i++) {
-            if(minWeekPayment > weekPayment[i])
+            if (minWeekPayment > weekPayment[i])
                 minWeekPayment = weekPayment[i];
-            if(maxWeekPayment < weekPayment[i])
+            if (maxWeekPayment < weekPayment[i])
                 maxWeekPayment = weekPayment[i];
         }
         System.out.println("Минимальная сумма трат за неделю составила " + minWeekPayment + " рублей. Максимальная сумма трат за неделю составила " + maxWeekPayment + " рублей");
@@ -632,6 +632,23 @@ public class Main {
         }
         System.out.printf(String.valueOf(reverseFullName) + "\n");
 
+        // Строки
+        // Задача 1
+        String firstName = "Ivan";
+        String middleName = "Ivanov";
+        String lastName = "Ivanovich";
+        String fullName = firstName + " " + middleName + " " + lastName;
 
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+
+        // Задача 2
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчета — " + fullName.toUpperCase());
+
+        // Задача 3
+        fullName = "Иванов Семён Семёнович";
+        String newFullName = fullName.replace('ё', 'е');
+
+        System.out.println("Данные Ф. И. О. сотрудника — " + newFullName);
+        
     }
 }
