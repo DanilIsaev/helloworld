@@ -632,15 +632,6 @@ public class Main {
         }
         System.out.printf(String.valueOf(reverseFullName) + "\n");
 
-        // Строки
-        // Задача 1
-        String firstName = "Ivan";
-        String middleName = "Ivanov";
-        String lastName = "Ivanovich";
-        String fullName = firstName + " " + middleName + " " + lastName;
-
-        System.out.println("Ф. И. О. сотрудника — " + fullName);
-
 
     }
 }
