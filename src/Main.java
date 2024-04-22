@@ -541,7 +541,7 @@ public class Main {
                 System.out.println(thisYear200 + " - следущий год, когда пролетит комета");
             thisYear200++;
         }
-
+      
         // Массивы 1
         // Задача 1
         int[] intArr = new int[3];
@@ -640,6 +640,7 @@ public class Main {
         String fullName = firstName + " " + middleName + " " + lastName;
 
         System.out.println("Ф. И. О. сотрудника — " + fullName);
+
 
     }
 }
