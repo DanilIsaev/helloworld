@@ -584,5 +584,63 @@ public class Main {
         }
         System.out.println(Arrays.toString(intArr));
 
+        // Массивы 2
+        // Задачам 1
+        int[] monthlyPayment = {10289, 231890, 54389, 122897, 90000};
+        int summMonthlyPayment = 0;
+
+        for (int i = 0; i < monthlyPayment.length; i++) {
+            summMonthlyPayment += monthlyPayment[i];
+        }
+        System.out.println("Сумма трат за месяц составила " + summMonthlyPayment + " рублей");
+
+        // Задача 2
+        int[] weekPayment = {1028, 23189, 5438, 12289, 9000};
+        Arrays.sort(weekPayment); // Реализуем сортировку по возрастанию
+        // Выводим первый элемент массива - минимальный, и последний - максимальный
+        System.out.println("Минимальная сумма трат за неделю составила " + weekPayment[0] + " рублей. Максимальная сумма трат за неделю составила " + weekPayment[weekPayment.length - 1] + " рублей");
+
+        // Альтернативный вариант задача 2
+        int minWeekPayment = weekPayment[0];
+        int maxWeekPayment = weekPayment[0];
+        for (int i = 0; i < weekPayment.length; i++) {
+            if(minWeekPayment > weekPayment[i])
+                minWeekPayment = weekPayment[i];
+            if(maxWeekPayment < weekPayment[i])
+                maxWeekPayment = weekPayment[i];
+        }
+        System.out.println("Минимальная сумма трат за неделю составила " + minWeekPayment + " рублей. Максимальная сумма трат за неделю составила " + maxWeekPayment + " рублей");
+
+
+        // Задача 3
+        int[] monthlyPayment_task3 = {10289, 231890, 54389, 122897, 90000};
+        double avrMonthlyPayment = 0d;
+
+        for (int i = 0; i < monthlyPayment_task3.length; i++) {
+            avrMonthlyPayment += monthlyPayment_task3[i];
+        }
+        avrMonthlyPayment = avrMonthlyPayment / monthlyPayment_task3.length;
+        System.out.println("Средняя сумма трат за месяц составила " + avrMonthlyPayment + " рублей");
+
+        // Задача 4
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = 0; i < reverseFullName.length / 2; i++) {
+            char tmp = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
+            reverseFullName[reverseFullName.length - 1 - i] = tmp;
+        }
+        System.out.printf(String.valueOf(reverseFullName) + "\n");
+
+        // Строки
+        // Задача 1
+        String firstName = "Ivan";
+        String middleName = "Ivanov";
+        String lastName = "Ivanovich";
+        String fullName = firstName + " " + middleName + " " + lastName;
+
+        System.out.println("Ф. И. О. сотрудника — " + fullName);
+
+
     }
 }
