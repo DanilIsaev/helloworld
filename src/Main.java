@@ -1,6 +1,16 @@
 import java.util.Arrays;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
+   // Метод проверки года на високосность
+    public static void checkLeapYear(int year) {
+        if (year % 4 == 0 && year > 1584 && year % 100 != 0 || year > 1584 && year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else if (year >= 1584) {
+            System.out.println(year + " год не является високосным");
+        } else
+            System.out.println(year + " год не входит в список високосных");
+    }
     public static void main(String[] args) {
 
         System.out.println("Привет, Мир!");
@@ -649,6 +659,12 @@ public class Main {
         String newFullName = fullName.replace('ё', 'е');
 
         System.out.println("Данные Ф. И. О. сотрудника — " + newFullName);
-        
+
+        //Методы
+        //Задача 1
+        int yearMethodVerification = 1601;
+        checkLeapYear(yearMethodVerification);
+
+
     }
 }
