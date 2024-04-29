@@ -12,8 +12,8 @@ public class Main {
             System.out.println(year + " год не входит в список високосных");
     }
 
-    // Метод провреки устройства пользователя
-    public static void checkDivice(int currentOs,int clientDeviceYear) {
+    // Метод провеки устройства пользователя
+    public static void checkDivice(int currentOs, int clientDeviceYear) {
         switch (currentOs) {
             case 0:
                 if (clientDeviceYear < 2015) {
@@ -30,6 +30,22 @@ public class Main {
             default:
                 System.out.println("Данная операционная система не поддерживается разработчиком");
         }
+    }
+
+    // Метод расчета дней доставки банковской карты
+    public static void deliveryDaysCalculationBankCard(int deliveryDistance) {
+        int deliveryTime = 0;
+        if (deliveryDistance <= 20) {
+            deliveryTime = 1;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryTime = 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryTime = 3;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else
+            System.out.println("Доставки нет");
     }
 
     public static void main(String[] args) {
@@ -691,7 +707,12 @@ public class Main {
         int yearManufactureDevice = 2015;
         int osDevice = 1;
 
-        checkDivice(osDevice,yearManufactureDevice);
+        checkDivice(osDevice, yearManufactureDevice);
+
+        // Задача 3
+        int distanceRecipient = 21;
+
+        deliveryDaysCalculationBankCard(distanceRecipient);
 
 
     }
