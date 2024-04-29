@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-   // Метод проверки года на високосность
+    // Метод проверки года на високосность
     public static void checkLeapYear(int year) {
         if (year % 4 == 0 && year > 1584 && year % 100 != 0 || year > 1584 && year % 400 == 0) {
             System.out.println(year + " год является високосным");
@@ -11,6 +11,27 @@ public class Main {
         } else
             System.out.println(year + " год не входит в список високосных");
     }
+
+    // Метод провреки устройства пользователя
+    public static void checkDivice(int currentOs,int clientDeviceYear) {
+        switch (currentOs) {
+            case 0:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 1:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                } else
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("Данная операционная система не поддерживается разработчиком");
+        }
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Привет, Мир!");
@@ -663,7 +684,14 @@ public class Main {
         //Методы
         //Задача 1
         int yearMethodVerification = 1601;
+
         checkLeapYear(yearMethodVerification);
+
+        //Задача 2
+        int yearManufactureDevice = 2015;
+        int osDevice = 1;
+
+        checkDivice(osDevice,yearManufactureDevice);
 
 
     }
