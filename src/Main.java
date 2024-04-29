@@ -1,5 +1,4 @@
 import java.util.Arrays;
-import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
     // Метод проверки года на високосность
@@ -13,7 +12,7 @@ public class Main {
     }
 
     // Метод провеки устройства пользователя
-    public static void checkDivice(int currentOs, int clientDeviceYear) {
+    public static void checkDevice(int currentOs, int clientDeviceYear) {
         switch (currentOs) {
             case 0:
                 if (clientDeviceYear < 2015) {
@@ -707,12 +706,16 @@ public class Main {
         int yearManufactureDevice = 2015;
         int osDevice = 1;
 
-        checkDivice(osDevice, yearManufactureDevice);
+        checkDevice(osDevice, yearManufactureDevice);
 
         // Задача 3
         int distanceRecipient = 21;
 
         deliveryDaysCalculationBankCard(distanceRecipient);
+
+        // Объекты и классы
+        // Задача 1
+
 
 
     }
