@@ -28,10 +28,11 @@ public class Book {
     public void setBookPublicationDate(int newBookPublicationDate) {
         this.bookPublicationDate = newBookPublicationDate;
     }
-
+    @Override
     public String toString() {
         return nameBook + " " + authorBook.toString() + " " + bookPublicationDate;
     }
+    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;

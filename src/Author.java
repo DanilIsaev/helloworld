@@ -15,20 +15,18 @@ public class Author {
         return this.surnameAuthor;
     }
 
+    @Override
     public String toString() {
         return surnameAuthor + " " + nameAuthor;
     }
 
+    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
         }
         Author otherAuthor = (Author) other;
-        if (surnameAuthor.equals(otherAuthor.surnameAuthor) && nameAuthor.equals(otherAuthor.nameAuthor)) {
-            return true;
-        } else {
-            return false;
-        }
+        return surnameAuthor.equals(otherAuthor.surnameAuthor) && nameAuthor.equals(otherAuthor.nameAuthor);
     }
 
     @Override
