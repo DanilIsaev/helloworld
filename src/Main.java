@@ -1,6 +1,52 @@
 import java.util.Arrays;
 
 public class Main {
+    // Метод проверки года на високосность
+    public static void checkLeapYear(int year) {
+        if (year % 4 == 0 && year > 1584 && year % 100 != 0 || year > 1584 && year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else if (year >= 1584) {
+            System.out.println(year + " год не является високосным");
+        } else
+            System.out.println(year + " год не входит в список високосных");
+    }
+
+    // Метод провеки устройства пользователя
+    public static void checkDevice(int currentOs, int clientDeviceYear) {
+        switch (currentOs) {
+            case 0:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+                } else
+                    System.out.println("Установите версию приложения для iOS по ссылке");
+                break;
+            case 1:
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                } else
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                break;
+            default:
+                System.out.println("Данная операционная система не поддерживается разработчиком");
+        }
+    }
+
+    // Метод расчета дней доставки банковской карты
+    public static void deliveryDaysCalculationBankCard(int deliveryDistance) {
+        int deliveryTime = 0;
+        if (deliveryDistance <= 20) {
+            deliveryTime = 1;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            deliveryTime = 2;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            deliveryTime = 3;
+            System.out.println("Потребуется дней: " + deliveryTime);
+        } else
+            System.out.println("Доставки нет");
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Привет, Мир!");
@@ -649,6 +695,28 @@ public class Main {
         String newFullName = fullName.replace('ё', 'е');
 
         System.out.println("Данные Ф. И. О. сотрудника — " + newFullName);
-        
+
+        //Методы
+        //Задача 1
+        int yearMethodVerification = 1601;
+
+        checkLeapYear(yearMethodVerification);
+
+        //Задача 2
+        int yearManufactureDevice = 2015;
+        int osDevice = 1;
+
+        checkDevice(osDevice, yearManufactureDevice);
+
+        // Задача 3
+        int distanceRecipient = 21;
+
+        deliveryDaysCalculationBankCard(distanceRecipient);
+
+        // Объекты и классы
+        // Задача 1
+
+
+
     }
 }
