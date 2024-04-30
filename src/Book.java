@@ -39,5 +39,12 @@ public class Book {
         Book otherBook = (Book) other;
         return nameBook.equals(otherBook.nameBook);
     }
+    public int hashCode() {
+        if (nameBook != null) {
+            return java.util.Objects.hash(nameBook);
+        } else {
+            return 0;
+        }
+    }
 
 }
