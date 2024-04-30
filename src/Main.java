@@ -740,6 +740,8 @@ public class Main {
         // Перепроверяем работу метода setBookPublicationDate(), с помощью вывода книг из библиотеки
         bookLibraryOutput(libraryBook);
 
+        // Методы классов
+
 
     }
 }
