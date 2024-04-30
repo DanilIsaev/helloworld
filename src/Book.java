@@ -28,22 +28,25 @@ public class Book {
     public void setBookPublicationDate(int newBookPublicationDate) {
         this.bookPublicationDate = newBookPublicationDate;
     }
+
     @Override
     public String toString() {
         return nameBook + " " + authorBook.toString() + " " + bookPublicationDate;
     }
+
     @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
         }
         Book otherBook = (Book) other;
-        return nameBook.equals(otherBook.nameBook);
+        return nameBook.equals(otherBook.nameBook) && authorBook.equals(otherBook.authorBook) && bookPublicationDate == otherBook.bookPublicationDate;
     }
+
     @Override
     public int hashCode() {
-        if (nameBook != null) {
-            return java.util.Objects.hash(nameBook);
+        if (nameBook != null && authorBook != null && bookPublicationDate > 0) {
+            return java.util.Objects.hash(nameBook + authorBook + bookPublicationDate);
         } else {
             return 0;
         }
