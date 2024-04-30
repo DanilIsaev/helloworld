@@ -741,6 +741,9 @@ public class Main {
         bookLibraryOutput(libraryBook);
 
         // Методы классов
+        libraryBook[0].toString();
+        libraryBook[1].toString();
+        System.out.println(libraryBook[0].equals(libraryBook[1]));
 
 
     }
