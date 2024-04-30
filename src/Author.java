@@ -31,6 +31,7 @@ public class Author {
         }
     }
 
+    @Override
     public int hashCode() {
         if (nameAuthor != null && surnameAuthor != null) {
             return java.util.Objects.hash(nameAuthor + surnameAuthor);
