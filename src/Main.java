@@ -733,7 +733,7 @@ public class Main {
             authorBook[i] = new Author(authorName[i], authorSurname[i]);
         }
         for (int i = 0; i < libraryBook.length; i++) {
-            libraryBook[i] = new Book(bookName[i], authorBook[i].getNameAuthor(), authorBook[i].getSurnameAuthor(), bookDatePublication[i]);
+            libraryBook[i] = new Book(bookName[i], authorBook[i], bookDatePublication[i]);
         }
         // Используем метод bookLibraryOutput() для вывода книг библиотеки
         bookLibraryOutput(libraryBook);

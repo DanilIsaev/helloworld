@@ -3,9 +3,9 @@ public class Book {
     private Author authorBook;
     private int bookPublicationDate;
 
-    public Book(String nameBook, String nameAuthor, String surnameAuthor, int bookPublicationDate) {
+    public Book(String nameBook, Author authorBook, int bookPublicationDate) {
         this.nameBook = nameBook;
-        authorBook = new Author(nameAuthor, surnameAuthor);
+        this.authorBook = authorBook;
         this.bookPublicationDate = bookPublicationDate;
     }
 
