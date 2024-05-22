@@ -31,6 +31,13 @@ public class Main {
         }
     }
 
+    // Вывод библитечного листа для задания "Объекты и классы"
+    public static void bookLibraryOutput(Book[] libraryBook) {
+        for (int i = 0; i < libraryBook.length; i++) {
+            System.out.printf("%s - %s %s (%d) \n", libraryBook[i].getNameBook(), libraryBook[i].getAuthorBookName(), libraryBook[i].getAuthorBookSurname(), libraryBook[i].getBookPublicationDate());
+        }
+    }
+
     // Метод расчета дней доставки банковской карты
     public static void deliveryDaysCalculationBankCard(int deliveryDistance) {
         int deliveryTime = 0;
@@ -714,8 +721,29 @@ public class Main {
         deliveryDaysCalculationBankCard(distanceRecipient);
 
         // Объекты и классы
-        // Задача 1
+        String[] bookName = {"Чапаев и пустота", "Самосаботаж. Преодолеть себя"};
+        String[] authorName = {"Виктор", "Карен"};
+        String[] authorSurname = {"Пелевин", "Берг"};
+        int[] bookDatePublication = {1996, 2015};
+        Book[] libraryBook = new Book[2]; // Создаем массив из 2х объктов типа Book, созданного нами
 
+        // Заполняем объекты
+        for (int i = 0; i < libraryBook.length; i++) {
+            libraryBook[i] = new Book(bookName[i], authorName[i], authorSurname[i], bookDatePublication[i]);
+        }
+        // Используем метод bookLibraryOutput() для вывода книг библиотеки
+        bookLibraryOutput(libraryBook);
+        // Создаем переменную с новой датой публикации для книги 1
+        int newBookPublicationDate = 1998;
+        // Используем метод setBookPublicationDate() для изменения даты
+        libraryBook[0].setBookPublicationDate(newBookPublicationDate);
+        // Перепроверяем работу метода setBookPublicationDate(), с помощью вывода книг из библиотеки
+        bookLibraryOutput(libraryBook);
+
+        // Методы классов
+        libraryBook[0].toString();
+        libraryBook[1].toString();
+        System.out.println(libraryBook[0].equals(libraryBook[1]));
 
 
     }
