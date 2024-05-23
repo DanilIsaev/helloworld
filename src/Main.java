@@ -726,10 +726,14 @@ public class Main {
         String[] authorSurname = {"Пелевин", "Берг"};
         int[] bookDatePublication = {1996, 2015};
         Book[] libraryBook = new Book[2]; // Создаем массив из 2х объктов типа Book, созданного нами
+        Author[] authorBook = new Author[2];
 
         // Заполняем объекты
+        for (int i = 0; i < authorBook.length; i++) {
+            authorBook[i] = new Author(authorName[i], authorSurname[i]);
+        }
         for (int i = 0; i < libraryBook.length; i++) {
-            libraryBook[i] = new Book(bookName[i], authorName[i], authorSurname[i], bookDatePublication[i]);
+            libraryBook[i] = new Book(bookName[i], authorBook[i], bookDatePublication[i]);
         }
         // Используем метод bookLibraryOutput() для вывода книг библиотеки
         bookLibraryOutput(libraryBook);
